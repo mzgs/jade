@@ -73,9 +73,9 @@ var golang = jade.ReplaseTokens{
 	MixinVar:         "\n%s = %s",
 	MixinVarRest:     "\n%s = %#v",
 	MixinVarEnd:      "\n)\n",
-	MixinVarBlockBgn: "var block []byte\n{\nbuffer := new(bytes.Buffer)",
+	MixinVarBlockBgn: "var block []byte\n{\nb := new(bytes.Buffer)\nbuffer := &WriterAsBuffer{b}",
 	MixinVarBlock:    "var block []byte",
-	MixinVarBlockEnd: "\nblock = buffer.Bytes()\n}\n",
+	MixinVarBlockEnd: "\nblock = b.Bytes()\n}\n",
 }
 
 type layout struct {
