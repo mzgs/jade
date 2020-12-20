@@ -175,7 +175,7 @@ output at localhost:8080
 
 ## Installation
 ```sh
-$ go get github.com/Joker/jade/cmd/jade
+$ go get github.com/mzgs/jade/cmd/jade
 ```
 
 
