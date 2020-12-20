@@ -1,4 +1,4 @@
-module github.com/Joker/jade
+module github.com/mzgs/jade
 
 go 1.14
 
